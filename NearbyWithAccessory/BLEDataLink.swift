@@ -35,4 +35,24 @@ class BLEDataLink: NSObject {
                                           queue: nil,
                                           options: [CBCentralManagerOptionShowPowerAlertKey: true])
     }
+    
+    func writeData(data: Data) {
+
+        guard let peripheral = peripheral,
+              let rxCharacteristic = rxCharacteristic else { return }
+
+        let mtu = peripheral.maximumWriteValueLength(for: .withResponse)
+
+        let bytesToCopy: size_t = min(mtu, data.count)
+
+        var rawPacket = [UInt8](repeating: 0, count: bytesToCopy)
+        data.copyBytes(to: &rawPacket, count: bytesToCopy)
+        let packetData = Data(bytes: &rawPacket, count: bytesToCopy)
+        let stringFromData = packetData.map { String(format: "0x%02x, ", $0) }.joined()
+        print("Writing \(bytesToCopy) bytes: \(String(describing: stringFromData))")
+        peripheral.writeValue(packetData,
+                              for: rxCharacteristic,
+                              type: .withResponse)
+    }
+    
 }

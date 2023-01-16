@@ -15,6 +15,7 @@
 		B87197842975FED400D3FE18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87197832975FED400D3FE18 /* SceneDelegate.swift */; };
 		B87197872976042B00D3FE18 /* BLEDataLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87197862976042B00D3FE18 /* BLEDataLink.swift */; };
 		B8719789297604D400D3FE18 /* BLEDataLink+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8719788297604D400D3FE18 /* BLEDataLink+Delegates.swift */; };
+		B8774FD8297611A7003295E5 /* MainVC+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8774FD7297611A7003295E5 /* MainVC+Delegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B87197832975FED400D3FE18 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B87197862976042B00D3FE18 /* BLEDataLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDataLink.swift; sourceTree = "<group>"; };
 		B8719788297604D400D3FE18 /* BLEDataLink+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BLEDataLink+Delegates.swift"; sourceTree = "<group>"; };
+		B8774FD7297611A7003295E5 /* MainVC+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+Delegates.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				B87197732975FCA300D3FE18 /* MainVC.swift */,
+				B8774FD7297611A7003295E5 /* MainVC+Delegates.swift */,
 				B87197862976042B00D3FE18 /* BLEDataLink.swift */,
 				B8719788297604D400D3FE18 /* BLEDataLink+Delegates.swift */,
 			);
@@ -154,6 +157,7 @@
 			files = (
 				B87197742975FCA300D3FE18 /* MainVC.swift in Sources */,
 				B8719789297604D400D3FE18 /* BLEDataLink+Delegates.swift in Sources */,
+				B8774FD8297611A7003295E5 /* MainVC+Delegates.swift in Sources */,
 				B87197702975FCA300D3FE18 /* AppDelegate.swift in Sources */,
 				B87197842975FED400D3FE18 /* SceneDelegate.swift in Sources */,
 				B87197872976042B00D3FE18 /* BLEDataLink.swift in Sources */,
@@ -307,6 +311,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support Files/Info.plist";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Use BLE";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "User Nearby";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -337,6 +342,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support Files/Info.plist";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Use BLE";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "User Nearby";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
