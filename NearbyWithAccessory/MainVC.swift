@@ -27,11 +27,6 @@ class MainVC: UIViewController {
             print("dataReceivedPublisher")
         }.store(in: &cancellables)
     }
-    
-    @IBAction func startTapped(_ sender: Any) {
-        
-    }
-    
 
 }
 

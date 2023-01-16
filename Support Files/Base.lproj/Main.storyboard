@@ -35,13 +35,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="15K-T2-htJ">
-                        <barButtonItem key="rightBarButtonItem" title="Start" id="6lB-uD-Jgd">
-                            <connections>
-                                <action selector="startTapped:" destination="BYZ-38-t0r" id="z7M-d3-pRC"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="15K-T2-htJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
