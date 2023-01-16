@@ -21,5 +21,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>kTCCServiceMediaLibrary</key>
+	<string>Use Nearby</string>
 </dict>
 </plist>
