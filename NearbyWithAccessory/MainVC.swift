@@ -23,7 +23,12 @@ enum MessageId: UInt8 {
 }
 
 class MainVC: UIViewController {
-
+    
+    
+    @IBOutlet weak var lockImageView: UIImageView!
+    @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var azimuthImageView: UIImageView!
+    
     var bleDataLink = BLEDataLink()
     var cancellables = Set<AnyCancellable>()
     
@@ -32,11 +37,13 @@ class MainVC: UIViewController {
     
     // A mapping from a discovery token to a name.
     var accessoryMap = [NIDiscoveryToken: String]()
-
+    var distanceThreshold: Float = 5.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        distanceLabel.isHidden = true
+        azimuthImageView.isHidden = true 
         niSession.delegate = self
         bindPublishers()
     }
@@ -78,10 +85,8 @@ class MainVC: UIViewController {
             setupAccessory(message, name: bleDataLink.peripheralName)
         case .accessoryUwbDidStart:
             print("accessoryUwbDidStart")
-//            handleAccessoryUwbDidStart()
         case .accessoryUwbDidStop:
             print("accessoryUwbDidStop")
-//            handleAccessoryUwbDidStop()
         case .configureAndStart:
             fatalError("Accessory should not send 'configureAndStart'.")
         case .initialize:
@@ -111,6 +116,10 @@ class MainVC: UIViewController {
         accessoryMap[token] = accessoryName
     }
     
+    func updateDistanceLabel(to distanceInFeet: Float) {
+        let distanceRounded = String(format: "%.2f", distanceInFeet)
+        distanceLabel.text = "\(distanceRounded) ft"
+    }
 
 }
 

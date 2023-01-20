@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n7z-Kl-5qm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,22 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="5cP-Bh-OrP">
-            <objects>
-                <navigationController id="n7z-Kl-5qm" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rKe-d2-dUF">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RRz-JJ-8x3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bdP-aC-v6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-813" y="-5"/>
-        </scene>
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -32,17 +16,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5vf-zz-gad">
+                                <rect key="frame" x="146.66666666666666" y="160" width="100" height="382"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1rS-Gj-ozC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="azimuth" translatesAutoresizingMaskIntoConstraints="NO" id="Mue-Hl-NIG">
+                                <rect key="frame" x="71.666666666666671" y="481" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5XI-Uj-1VJ"/>
+                                    <constraint firstAttribute="width" constant="40" id="8De-ks-zI4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0up-bQ-JPe">
+                                <rect key="frame" x="196.66666666666666" y="501" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5vf-zz-gad" firstAttribute="leading" secondItem="Mue-Hl-NIG" secondAttribute="trailing" constant="35" id="6wT-ET-Idt"/>
+                            <constraint firstItem="0up-bQ-JPe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="78u-2d-mrL"/>
+                            <constraint firstItem="0up-bQ-JPe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="75" id="GXW-HD-jhI"/>
+                            <constraint firstItem="5vf-zz-gad" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="Ujh-tl-mJG"/>
+                            <constraint firstItem="Mue-Hl-NIG" firstAttribute="centerY" secondItem="0up-bQ-JPe" secondAttribute="centerY" id="bJn-Mf-dzO"/>
+                            <constraint firstItem="5vf-zz-gad" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d9r-IL-dNd"/>
+                            <constraint firstItem="5vf-zz-gad" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="miM-un-xBt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="15K-T2-htJ"/>
+                    <connections>
+                        <outlet property="azimuthImageView" destination="Mue-Hl-NIG" id="DMo-3q-ozj"/>
+                        <outlet property="distanceLabel" destination="0up-bQ-JPe" id="2lq-lP-kPT"/>
+                        <outlet property="lockImageView" destination="5vf-zz-gad" id="H8x-IG-Gpo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="-6"/>
+            <point key="canvasLocation" x="116.79389312977099" y="-6.3380281690140849"/>
         </scene>
     </scenes>
     <resources>
+        <image name="azimuth" width="512" height="512"/>
+        <image name="lock" catalog="system" width="125" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
