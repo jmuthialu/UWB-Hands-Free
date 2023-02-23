@@ -49,7 +49,6 @@
 			children = (
 				B8499DF529933E72005E45D8 /* README.md */,
 				B871976E2975FCA300D3FE18 /* UWBPrecisionRanging */,
-				B8719785297602C200D3FE18 /* Support Files */,
 				B871976D2975FCA300D3FE18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +64,7 @@
 		B871976E2975FCA300D3FE18 /* UWBPrecisionRanging */ = {
 			isa = PBXGroup;
 			children = (
+				B8719785297602C200D3FE18 /* Support Files */,
 				B87197732975FCA300D3FE18 /* MainVC.swift */,
 				B8774FD7297611A7003295E5 /* MainVC+Delegates.swift */,
 				B87197862976042B00D3FE18 /* BLEDataLink.swift */,
@@ -311,7 +311,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QP8Z378EKD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Support Files/Info.plist";
+				INFOPLIST_FILE = "UWBPrecisionRanging/Support Files/Info.plist";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Use BLE";
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "User Nearby";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -344,7 +344,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QP8Z378EKD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Support Files/Info.plist";
+				INFOPLIST_FILE = "UWBPrecisionRanging/Support Files/Info.plist";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Use BLE";
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "User Nearby";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
