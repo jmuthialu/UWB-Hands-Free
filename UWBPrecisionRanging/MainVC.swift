@@ -1,6 +1,6 @@
 //
 //  MainVC.swift
-//  NearbyWithAccessory
+//  UWBPrecisionRanging
 //
 //  Created by Jay Muthialu on 1/16/23.
 //
