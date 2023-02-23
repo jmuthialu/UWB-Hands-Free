@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		B8499DF529933E72005E45D8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B871976C2975FCA300D3FE18 /* NearbyWithAccessory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyWithAccessory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B871976C2975FCA300D3FE18 /* UWBPrecisionRanging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWBPrecisionRanging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B871976F2975FCA300D3FE18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B87197732975FCA300D3FE18 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B87197762975FCA300D3FE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				B8499DF529933E72005E45D8 /* README.md */,
-				B871976E2975FCA300D3FE18 /* NearbyWithAccessory */,
+				B871976E2975FCA300D3FE18 /* UWBPrecisionRanging */,
 				B8719785297602C200D3FE18 /* Support Files */,
 				B871976D2975FCA300D3FE18 /* Products */,
 			);
@@ -57,12 +57,12 @@
 		B871976D2975FCA300D3FE18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B871976C2975FCA300D3FE18 /* NearbyWithAccessory.app */,
+				B871976C2975FCA300D3FE18 /* UWBPrecisionRanging.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B871976E2975FCA300D3FE18 /* NearbyWithAccessory */ = {
+		B871976E2975FCA300D3FE18 /* UWBPrecisionRanging */ = {
 			isa = PBXGroup;
 			children = (
 				B87197732975FCA300D3FE18 /* MainVC.swift */,
@@ -70,7 +70,7 @@
 				B87197862976042B00D3FE18 /* BLEDataLink.swift */,
 				B8719788297604D400D3FE18 /* BLEDataLink+Delegates.swift */,
 			);
-			path = NearbyWithAccessory;
+			path = UWBPrecisionRanging;
 			sourceTree = "<group>";
 		};
 		B8719785297602C200D3FE18 /* Support Files */ = {
@@ -89,9 +89,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B871976B2975FCA300D3FE18 /* NearbyWithAccessory */ = {
+		B871976B2975FCA300D3FE18 /* UWBPrecisionRanging */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B87197802975FCA400D3FE18 /* Build configuration list for PBXNativeTarget "NearbyWithAccessory" */;
+			buildConfigurationList = B87197802975FCA400D3FE18 /* Build configuration list for PBXNativeTarget "UWBPrecisionRanging" */;
 			buildPhases = (
 				B87197682975FCA300D3FE18 /* Sources */,
 				B87197692975FCA300D3FE18 /* Frameworks */,
@@ -101,9 +101,9 @@
 			);
 			dependencies = (
 			);
-			name = NearbyWithAccessory;
+			name = UWBPrecisionRanging;
 			productName = NearbyWithAccessory;
-			productReference = B871976C2975FCA300D3FE18 /* NearbyWithAccessory.app */;
+			productReference = B871976C2975FCA300D3FE18 /* UWBPrecisionRanging.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B87197672975FCA300D3FE18 /* Build configuration list for PBXProject "NearbyWithAccessory" */;
+			buildConfigurationList = B87197672975FCA300D3FE18 /* Build configuration list for PBXProject "UWBPrecisionRanging" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B871976B2975FCA300D3FE18 /* NearbyWithAccessory */,
+				B871976B2975FCA300D3FE18 /* UWBPrecisionRanging */,
 			);
 		};
 /* End PBXProject section */
@@ -367,7 +367,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B87197672975FCA300D3FE18 /* Build configuration list for PBXProject "NearbyWithAccessory" */ = {
+		B87197672975FCA300D3FE18 /* Build configuration list for PBXProject "UWBPrecisionRanging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B871977E2975FCA400D3FE18 /* Debug */,
@@ -376,7 +376,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B87197802975FCA400D3FE18 /* Build configuration list for PBXNativeTarget "NearbyWithAccessory" */ = {
+		B87197802975FCA400D3FE18 /* Build configuration list for PBXNativeTarget "UWBPrecisionRanging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B87197812975FCA400D3FE18 /* Debug */,
