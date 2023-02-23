@@ -45,10 +45,10 @@ class MainVC: UIViewController {
         distanceLabel.isHidden = true
         azimuthImageView.isHidden = true 
         niSession.delegate = self
-        bindPublishers()
+        subscribeToPublishers()
     }
     
-    func bindPublishers() {
+    func subscribeToPublishers() {
         bleDataLink.accessoryReadyPublisher.sink { [weak self] _ in
             print("accessoryReadyPublisher")
             

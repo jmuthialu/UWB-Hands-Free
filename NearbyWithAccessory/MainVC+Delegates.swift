@@ -11,7 +11,9 @@ import NearbyInteraction
 extension MainVC: NISessionDelegate {
     
     // This is called after accessory configuration data is received
-    // and NISession.run() is called
+    // and NISession.run() is called. NISession generates shareable
+    // configuration data and calls this delegate method where it is
+    // sent to accessory
     func session(_ session: NISession, didGenerateShareableConfigurationData shareableConfigurationData: Data, for object: NINearbyObject) {
 
         print("didGenerateShareableConfigurationData")
@@ -56,7 +58,5 @@ extension MainVC: NISessionDelegate {
         let elevation = atan2(direction.z, direction.y) + .pi / 2
         print("azimuth: \(azimuth) - elevation: \(elevation)")
         azimuthImageView.transform = CGAffineTransform(rotationAngle: CGFloat(azimuth ))
-        
-        
     }
 }
