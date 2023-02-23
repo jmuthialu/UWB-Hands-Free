@@ -59,10 +59,7 @@ extension MainVC: NISessionDelegate {
             lockImageView.image = UIImage(systemName: "lock")
         }
         
-        guard let direction = nearbyObject.direction else {
-            azimuthImageView.transform = .identity
-            return
-        }
+        guard let direction = nearbyObject.direction else { return }
         let azimuth = asin(direction.x)
         let elevation = atan2(direction.z, direction.y) + .pi / 2
         print("azimuth: \(azimuth) - elevation: \(elevation)")
