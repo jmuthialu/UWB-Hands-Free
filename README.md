@@ -1,16 +1,15 @@
 #  UWB based nearby using Estimote UWB beacons (White)
 
+## Introduction
+
+Refer to my medium post on details: https://medium.com/@JayMuthialu/uwb-based-hands-free-technology-basics-to-advanced-part-2-612f3b5d7fb8
 
 ## How does this work?
 
 ### 1 - Establish BLE data link
-- Scan for peripherals
-- You should get UDID of white estimote beacon. This is advertised by the beacon
-- Connect to this peripheral
-- Discover services
-- Discover characteristics
-- Set notification for Rx Characterisrics
-- Send accessoryReadyPublisher publisher
+- Scan for peripherals and connect to UWB using its UDID. This is advertised by the beacon.
+- Connect to this peripheral and set notification for tx Characterisrics
+- Send `accessoryReadyPublisher` publisher
 
 ### 2 - Establish connection with UWB
 - Subscriber to accessoryReadyPublisher will send `initialize` command to accessory

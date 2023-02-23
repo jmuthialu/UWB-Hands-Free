@@ -31,6 +31,15 @@ extension MainVC: NISessionDelegate {
         azimuthImageView.isHidden = false
     }
     
+    // Retry if accessory connection is lost
+    func session(_ session: NISession, didRemove nearbyObjects: [NINearbyObject], reason: NINearbyObject.RemovalReason) {
+        guard let accessory = nearbyObjects.first, reason == .timeout else { return }
+        
+        accessoryMap.removeValue(forKey: accessory.discoveryToken)
+        send(data: Data([MessageId.stop.rawValue]))
+        send(data: Data([MessageId.initialize.rawValue]))
+    }
+    
     // Called after Apple Shareable config is sent via `dataChannel.sendData(data)`
     func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) {
         guard let nearbyObject = nearbyObjects.first,
