@@ -2,7 +2,9 @@
 
 ## Introduction
 
-Refer to my medium post for complete details and demo video: https://medium.com/@JayMuthialu/uwb-based-hands-free-technology-basics-to-advanced-part-2-612f3b5d7fb8
+Refer to my medium post for complete details and demo video: 
+
+https://medium.com/@JayMuthialu/uwb-based-hands-free-technology-basics-to-advanced-part-2-612f3b5d7fb8
 
 ## How does this work?
 
