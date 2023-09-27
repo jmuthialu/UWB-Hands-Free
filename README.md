@@ -6,6 +6,14 @@ Refer to my medium post for complete details and demo video:
 
 https://medium.com/@JayMuthialu/uwb-based-hands-free-technology-basics-to-advanced-part-2-612f3b5d7fb8
 
+## Video Demo
+
+
+
+https://github.com/jmuthialu/UWBPrecisionRanging/assets/10758530/b304c419-2651-418f-8a68-78789661bd1c
+
+
+
 ## How does this work?
 
 ### 1 - Establish BLE data link
